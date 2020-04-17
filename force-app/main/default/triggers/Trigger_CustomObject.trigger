@@ -2,6 +2,7 @@ trigger Trigger_CustomObject on Custom_Object__c (before insert, after insert, b
     if(Trigger.IsBefore){
         if(Trigger.IsInsert){
             System.debug('>>> before insert');
+            System.debug('>>> before Viv');
         }
         if(Trigger.isUpdate){
             System.debug('>>> before update');
